@@ -3,7 +3,7 @@ var words = fs.readFileSync("words.txt").toString();
 words = words.split("\n");
 var number = 0;
 
-var badlt = /[bdfghlqptxy]/;
+var badlt = /[bdfghlqptyk]/;
 
 for (var testWord of words) {
   if (testWord.match(badlt)) {
